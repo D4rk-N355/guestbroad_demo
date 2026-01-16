@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ttr1ck3 Server 留言板</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Ttr1ck3 Server</h1>
+            <p>極簡雲端留言板系統</p>
+        </header>
+
+        <section class="input-group">
+            <input type="text" id="name" placeholder="你的暱稱..." maxlength="10">
+            <textarea id="content" placeholder="想說些什麼嗎？" rows="3"></textarea>
+            <button onclick="sendMessage()" id="sendBtn">發佈留言</button>
+        </section>
+
+        <section class="message-section">
+            <div class="loader" id="loader">連線中...</div>
+            <div id="messageBoard"></div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
