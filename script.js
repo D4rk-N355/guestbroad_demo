@@ -1,5 +1,5 @@
 // 這裡之後要換成你的外網 IP 或 Cloudflare Tunnel 網址
-const API_BASE = "http://192.168.31.239:5000";
+const API_BASE = "https://api.ttr1ck3.uk";
 
 // 網頁載入後立即抓取留言
 window.onload = fetchMessages;
